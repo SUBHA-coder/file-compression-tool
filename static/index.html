@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Compression Tool</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>File Compression Tool</h1>
+            <p>Upload and compress images or PDFs</p>
+        </header>
+        
+        <section class="upload-section">
+            <form action="/compress" method="POST" enctype="multipart/form-data">
+                <label for="file">Choose a file (JPG, PNG, PDF):</label><br><br>
+                <input type="file" name="file" id="file" accept=".jpg, .jpeg, .png, .pdf" required><br><br>
+                <button type="submit" class="btn">Upload and Compress</button>
+            </form>
+        </section>
+        
+        <section id="response" class="response">
+            <!-- Response message will appear here -->
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
